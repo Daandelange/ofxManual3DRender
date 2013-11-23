@@ -10,3 +10,7 @@ An OpenFrameworks example using ofAssimpModelLoader showing how to manually rend
 
 The basics are working correctly but there's currently an issue with getting the normals from the ofMeshFaces.
 They're weirdly oriented.
+
+Screenshot
+=======
+[preview](https://raw.github.com/Daandelange/ofManual3DRender/master/bin/data/preview.png)
