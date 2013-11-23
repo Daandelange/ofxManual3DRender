@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <author>VCGLab</author>
+            <authoring_tool>VCGLib | MeshLab</authoring_tool>
+        </contributor>
+        <up_axis>Y_UP</up_axis>
+        <created>Sat Nov 23 15:48:36 2013</created>
+        <modified>Sat Nov 23 15:48:36 2013</modified>
+    </asset>
+    <library_images>
+        <image id="texture0" name="texture0">
+            <init_from>notexture.png</init_from>
+        </image>
+    </library_images>
+    <library_materials>
+        <material id="material0" name="material0">
+            <instance_effect url="#material0-fx"/>
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="material0-fx">
+            <profile_COMMON>
+                <newparam sid="texture0-surface">
+                    <surface type="2D">
+                        <init_from>texture0</init_from>
+                        <format>R8G8B8</format>
+                    </surface>
+                </newparam>
+                <newparam sid="texture0-sampler">
+                    <sampler2D>
+                        <source>texture0-surface</source>
+                        <minfilter>LINEAR</minfilter>
+                        <magfilter>LINEAR</magfilter>
+                    </sampler2D>
+                </newparam>
+                <technique sid="common">
+                    <blinn>
+                        <emission>
+                            <color>0 0 0 1</color>
+                        </emission>
+                        <ambient>
+                            <color>0 0 0 1</color>
+                        </ambient>
+                        <diffuse>
+                            <texture texture="texture0" texcoord="UVSET0"/>
+                        </diffuse>
+                        <specular>
+                            <color>0 0 0 1</color>
+                        </specular>
+                        <shininess>
+                            <float>0.3</float>
+                        </shininess>
+                        <reflective>
+                            <color>0 0 0 1</color>
+                        </reflective>
+                        <reflectivity>
+                            <float>0.5</float>
+                        </reflectivity>
+                        <transparent>
+                            <color>0 0 0 1</color>
+                        </transparent>
+                        <transparency>
+                            <float>0</float>
+                        </transparency>
+                        <index_of_refraction>
+                            <float>0</float>
+                        </index_of_refraction>
+                    </blinn>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="shape0-lib" name="shape0">
+            <mesh>
+                <source id="shape0-lib-positions" name="position">
+                    <float_array id="shape0-lib-positions-array" count="180">-56.3037 67.6787 -3.37929e-14 -56.3037 1.12799e-14 -3.37929e-14 -24.975 36.35 38.4 56.3037 67.6787 3.94328e-14 24.975 36.35 38.4 56.3037 1.12799e-14 3.94328e-14 56.3037 1.12799e-14 3.94328e-14 24.975 -36.35 38.4 56.3037 -67.6787 3.94328e-14 24.975 36.35 38.4 41.575 0 38.4 56.3037 1.12799e-14 3.94328e-14 56.3037 1.12799e-14 3.94328e-14 41.575 0 38.4 24.975 -36.35 38.4 -56.3037 1.12799e-14 -3.37929e-14 -56.3037 -67.6787 -3.37929e-14 -24.975 -36.35 38.4 -56.3037 1.12799e-14 -3.37929e-14 -24.975 -36.35 38.4 -39.575 0 38.4 -24.975 36.35 38.4 -56.3037 1.12799e-14 -3.37929e-14 -39.575 0 38.4 41.575 0 38.4 24.975 36.35 38.4 -3.61655e-14 0 55.8 41.575 0 38.4 -3.61655e-14 0 55.8 24.975 -36.35 38.4 24.975 36.35 38.4 -24.975 36.35 38.4 -3.61655e-14 0 55.8 -3.61655e-14 0 55.8 -24.975 36.35 38.4 -39.575 0 38.4 -3.61655e-14 0 55.8 -39.575 0 38.4 -24.975 -36.35 38.4 24.975 -36.35 38.4 -3.61655e-14 0 55.8 -24.975 -36.35 38.4 24.975 -36.35 38.4 0 -48.6787 0 56.3037 -67.6787 3.94328e-14 -24.975 -36.35 38.4 -56.3037 -67.6787 -3.37929e-14 0 -48.6787 0 24.975 -36.35 38.4 -24.975 -36.35 38.4 0 -48.6787 0 -24.975 36.35 38.4 0 46.0787 0 -56.3037 67.6787 -3.37929e-14 24.975 36.35 38.4 56.3037 67.6787 3.94328e-14 0 46.0787 0 24.975 36.35 38.4 0 46.0787 0 -24.975 36.35 38.4</float_array>
+                    <technique_common>
+                        <accessor count="60" source="#shape0-lib-positions-array" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="shape0-lib-normals" name="normal">
+                    <float_array id="shape0-lib-normals-array" count="60">-0.774842 0 0.632155 0.774842 0 0.632155 0.774842 0 0.632155 0.858862 0.392218 0.329425 0.858862 -0.392218 0.329425 -0.774842 0 0.632155 -0.86031 -0.345544 0.374788 -0.86031 0.345544 0.374788 0.380208 0.17363 0.908457 0.380208 -0.17363 0.908457 0 0.431763 0.901987 -0.397328 0.159587 0.903694 -0.397328 -0.159587 0.903694 0 -0.431763 0.901987 -0.284587 -0.843332 0.455853 0.284587 -0.843332 0.455853 0 -0.952131 0.305691 0.324224 0.84514 0.42499 -0.324224 0.84514 0.42499 0 0.969373 0.245592</float_array>
+                    <technique_common>
+                        <accessor count="20" source="#shape0-lib-normals-array" stride="3">
+                            <param name="X" type="float"/>
+                            <param name="Y" type="float"/>
+                            <param name="Z" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="shape0-lib-map" name="map">
+                    <float_array id="shape0-lib-map-array" count="120">0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</float_array>
+                    <technique_common>
+                        <accessor count="60" source="#shape0-lib-map-array" stride="2">
+                            <param name="U" type="float"/>
+                            <param name="V" type="float"/>
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="shape0-lib-vertices">
+                    <input semantic="POSITION" source="#shape0-lib-positions"/>
+                </vertices>
+                <triangles count="20" material="material0">
+                    <input offset="0" semantic="VERTEX" source="#shape0-lib-vertices"/>
+                    <input offset="1" semantic="NORMAL" source="#shape0-lib-normals"/>
+                    <input offset="2" semantic="TEXCOORD" source="#shape0-lib-map"/>
+                    <p>0 0 0 1 0 1 2 0 2 3 1 3 4 1 4 5 1 5 6 2 6 7 2 7 8 2 8 9 3 9 10 3 10 11 3 11 12 4 12 13 4 13 14 4 14 15 5 15 16 5 16 17 5 17 18 6 18 19 6 19 20 6 20 21 7 21 22 7 22 23 7 23 24 8 24 25 8 25 26 8 26 27 9 27 28 9 28 29 9 29 30 10 30 31 10 31 32 10 32 33 11 33 34 11 34 35 11 35 36 12 36 37 12 37 38 12 38 39 13 39 40 13 40 41 13 41 42 14 42 43 14 43 44 14 44 45 15 45 46 15 46 47 15 47 48 16 48 49 16 49 50 16 50 51 17 51 52 17 52 53 17 53 54 18 54 55 18 55 56 18 56 57 19 57 58 19 58 59 19 59</p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_visual_scenes>
+        <visual_scene id="VisualSceneNode" name="VisualScene">
+            <node id="node" name="node">
+                <instance_geometry url="#shape0-lib">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="material0" target="#material0">
+                                <bind_vertex_input semantic="UVSET0" input_semantic="TEXCOORD"/>
+                            </instance_material>
+                        </technique_common>
+                    </bind_material>
+                </instance_geometry>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#VisualSceneNode"/>
+    </scene>
+</COLLADA>
