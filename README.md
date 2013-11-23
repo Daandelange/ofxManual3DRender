@@ -13,4 +13,4 @@ They're weirdly oriented.
 
 Screenshot
 =======
-[preview](https://raw.github.com/Daandelange/ofManual3DRender/master/bin/data/preview.png)
+![preview](https://raw.github.com/Daandelange/ofManual3DRender/master/bin/data/preview.png)
