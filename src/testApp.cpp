@@ -94,7 +94,7 @@ void testApp::draw(){
 		// draw normals
 		ofSetHexColor(0x0000FF);
 		ofCircle(center.x, center.y, center.z, 1);
-		ofLine(center.x, center.y, center.z, normal.x*50, normal.y*50, normal.z*50);
+		ofLine(center.x, center.y, center.z, center.x + normal.x*5, center.y + normal.y*5, center.z + normal.z*5);
 		
 		// draw vertices
 		ofSetHexColor(0x000000);
@@ -103,6 +103,24 @@ void testApp::draw(){
 		ofCircle(face.getVertex(2).x, face.getVertex(2).y, face.getVertex(2).z, 2);
 	}
 	
+	// draw vertex normals
+	{
+	vector<ofVec3f>& normals    = mesh.getNormals();
+	vector<ofVec3f>& vertices   = mesh.getVertices();
+	ofMesh normalsMesh;
+	normalsMesh.setMode( OF_PRIMITIVE_LINES );
+	normalsMesh.getVertices().resize( normals.size() * 2);
+	ofVec3f normal;
+	ofVec3f vert;
+		for(int i = 0; i < (int)normals.size(); i++) {
+			vert = vertices[i];
+			normal = normals[i].normalized();
+			normalsMesh.setVertex( i*2, vert);
+			normal *= 10;
+			normalsMesh.setVertex(i*2+1, normal+vert);
+		}
+	normalsMesh.draw();
+	}
 	
 	//restore the view position
     ofPopMatrix();
